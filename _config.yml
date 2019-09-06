@@ -24,11 +24,14 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ArchiLab_CIDE
 github_username: Archi-Lab-FAE
 
+
+
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+include: ['_pages']
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

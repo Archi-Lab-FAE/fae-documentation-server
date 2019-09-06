@@ -1,0 +1,22 @@
+---
+title:     Team-1
+permalink: /team-1
+layout:    page
+---
+<p>
+  Hier werden alle {{page.title}} bezogenen Entscheidungen aufgeführt.
+  Diese Entscheidungen sollten innerhalb des Teams enschieden werden.
+  Es sollten alle relevanten Entscheidungen festgehalten werden.
+</p>
+<h3>Mitglieder {{page.title}}</h3>
+<ul>
+  <li>Member1</li>
+  <li>Member2</li>
+  <li>...</li>
+</ul>
+
+
+<h3>Liste der Entscheidungen</h3>
+{% for post in site.categories.team1 %}
+<li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a> &nbsp; <span>Autor:&nbsp;{{post.author}}</span>
+  {% endfor %}
