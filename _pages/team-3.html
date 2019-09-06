@@ -17,6 +17,18 @@ layout:    page
 
 
 <h3>Liste der Entscheidungen</h3>
-{% for post in site.categories.team3 %}
-<li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a> &nbsp; <span>Autor:&nbsp;{{post.author}}</span>
+<ul class="post-list">
+  {%- if site.categories.team3.size > 0 -%}
+  {% for post in site.categories.team3 %}
+  <li class="post-list-item"><span
+      class="post-meta">{{ post.date | date_to_string }}&nbsp;Autor:&nbsp;{{post.author}}</span> &nbsp;
+    <h4>
+      <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+    </h4>
+  </li>
   {% endfor %}
+  {% else %}
+  <h4 class="post-list-item">Bisher keine Entscheidungen vorhanden</h4>
+  {% endif %}
+</ul>
+
