@@ -1,5 +1,8 @@
 node {
 
+    def image = "fae-documentation-server"
+    def registry = "docker.nexus.archi-lab.io/archilab"
+
     stage('Checkout Global') {
         dir("_posts/global") {
             git(
@@ -52,7 +55,7 @@ node {
 
     stage('Build Production Image') {
         docker.withRegistry('https://docker.nexus.archi-lab.io', 'archilab-nexus-jenkins') {
-            def customImage = docker.build("docker.nexus.archi-lab.io/archilab/fae-documentation-server:${env.BUILD_ID}")
+            def customImage = docker.build("${registry}/${image}:${env.BUILD_ID}")
             customImage.push()
             customImage.push('latest')
         }
@@ -62,7 +65,7 @@ node {
         docker.withServer('tcp://10.10.10.61:2376', 'fae-ws2019-certs') {
             docker.withRegistry('https://docker.nexus.archi-lab.io', 'archilab-nexus-jenkins') {
                 sh "env TAG=${env.BUILD_ID} docker stack deploy --with-registry-auth \
-                    -c src/main/docker/docker-compose-prod.yml"
+                    -c src/main/docker/docker-compose-prod.yml ${image}"
             }
         }
     }
