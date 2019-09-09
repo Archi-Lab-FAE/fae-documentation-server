@@ -1,6 +1,6 @@
 properties([
         pipelineTriggers([
-                scm('H/2 * * * *')
+                pollSCM('H/1 * * * *')
         ])
 ])
 

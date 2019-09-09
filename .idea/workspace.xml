@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc453a5f-25fe-4554-9f58-3e446c4f1501" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/global/2019-09-06-example-decision.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/global/2019-09-06-example-glosar-1.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/global/2019-09-06-example-glosar.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/team1/2019-09-06-team-1-example-decision.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/team3/2019-09-06-team-3-example-decision.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/team4/2019-09-06-team-4-example-decision.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +97,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="279" />
+    <option name="x" value="-1902" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -251,18 +244,18 @@
       <workItem from="1567751643123" duration="5051000" />
       <workItem from="1567758102911" duration="16369000" />
       <workItem from="1567840278372" duration="336000" />
-      <workItem from="1568008746452" duration="3575000" />
+      <workItem from="1568008746452" duration="3960000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25331000" />
+    <option name="totallyTimeSpent" value="25716000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -280,7 +273,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Statistic" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.61755145" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.26002166" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
