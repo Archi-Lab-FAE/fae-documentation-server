@@ -10,6 +10,8 @@ COPY . /app
 # build static site
 # permissions are not correct.
 RUN chmod 777 /app/Gemfile.lock
+# change permissions of the jekyll user. The jekyll base image uses this user instead of root
+RUN chown -R jekyll /Users
 RUN jekyll build
 
 ##################
