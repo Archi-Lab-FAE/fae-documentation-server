@@ -1,5 +1,3 @@
-node {
-
     def image = "fae-documentation-server"
     def registry = "docker.nexus.archi-lab.io/archilab"
 
@@ -71,4 +69,4 @@ node {
             }
         }
     }
-}
+
