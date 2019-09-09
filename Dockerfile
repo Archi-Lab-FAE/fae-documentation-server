@@ -11,7 +11,7 @@ COPY . /app
 # permissions are not correct.
 RUN chmod 777 /app/Gemfile.lock
 # change permissions of the jekyll user. The jekyll base image uses this user instead of root
-RUN chown -R jekyll /
+RUN chown -R jekyll /app
 RUN jekyll build
 
 ##################
