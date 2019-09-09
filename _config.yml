@@ -39,6 +39,8 @@ exclude:
   - 'nginx.default.conf'
   - 'Dockerfile'
   - 'pipeline.groovy'
+  - 'Gemfile'
+  - 'Gemfile.lock'
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
