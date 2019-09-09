@@ -1,10 +1,12 @@
 node {
+    sh "ls -lisa"
     stage('Checkout Main Project') {
         git(
                 url: 'https://github.com/Archi-Lab-FAE/fae-documentation-server.git',
                 credentialsId: 'archilab-github-jenkins',
                 branch: 'master'
         )
+        sh "ls -lisa"
     }
     load 'pipeline.groovy'
 }
