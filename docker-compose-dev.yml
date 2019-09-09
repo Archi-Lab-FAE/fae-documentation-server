@@ -2,6 +2,6 @@ version: '3'
 
 services:
   jekyll-ngnix:
-    image: docker.nexus.archi-lab.io/archilab/fae-service-discovery
+    image: docker.nexus.archi-lab.io/archilab/fae-documentation-server
     ports:
       - 80:80
