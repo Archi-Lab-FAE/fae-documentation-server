@@ -10,6 +10,7 @@ layout:    page
 </p>
 
 <h3>Einträge des Glossars</h3>
+{%- if site.categories.glossar.size > 0 -%}
 {% assign sorted_posts = site.categories.glossar | sort: post.title %}
 {%- if sorted_posts.size > 0 -%}
 {% for post in sorted_posts  %}
@@ -17,5 +18,7 @@ layout:    page
 </li>
 {% endfor %}
 {% else %}
+<h4 class="post-list-item">Bisher keine Einträge vorhanden</h4>
+{% endif %}
 <h4 class="post-list-item">Bisher keine Einträge vorhanden</h4>
 {% endif %}
