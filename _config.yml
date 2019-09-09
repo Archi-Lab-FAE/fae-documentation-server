@@ -41,8 +41,8 @@ exclude:
   - 'pipeline.groovy'
   - 'Gemfile'
   - 'Gemfile.lock'
-  - 'docker-compose.prod.yml'
-  - 'docker-compose.dev.yml'
+  - 'docker-compose-prod.yml'
+  - 'docker-compose-dev.yml'
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
