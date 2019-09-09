@@ -64,6 +64,8 @@ node {
     stage('Deploy') {
         docker.withServer('tcp://10.10.10.61:2376', 'fae-ws2019-certs') {
             docker.withRegistry('https://docker.nexus.archi-lab.io', 'archilab-nexus-jenkins') {
+                sh "pwd"
+                sh "ls"
                 sh "env TAG=${env.BUILD_ID} docker stack deploy --with-registry-auth \
                     -c ./docker-compose-prod.yml ${image}"
             }
