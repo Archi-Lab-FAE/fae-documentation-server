@@ -31,8 +31,14 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-include: ['_pages']
-exclude: ['README.md', 'Jenkinsfile', 'nginx.default.conf', 'Dockerfile' ]
+include:
+  - '_pages'
+exclude:
+  - 'README.md'
+  - 'Jenkinsfile'
+  - 'nginx.default.conf'
+  - 'Dockerfile'
+  - 'pipeline.groovy'
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
