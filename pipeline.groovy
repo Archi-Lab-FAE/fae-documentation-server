@@ -8,6 +8,7 @@
                     credentialsId: 'archilab-github-jenkins',
                     branch: 'master'
             )
+            sh "chmod 755 $workspace/create_changeLog_of_directory.sh"
             sh "$workspace/create_changeLog_of_directory.sh"
         }
     }
