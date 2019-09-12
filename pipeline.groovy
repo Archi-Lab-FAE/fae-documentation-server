@@ -8,6 +8,7 @@
                     credentialsId: 'archilab-github-jenkins',
                     branch: 'master'
             )
+            sh "$workspace/create_changeLog_of_directory.sh"
         }
     }
 
@@ -18,6 +19,7 @@
                     credentialsId: 'archilab-github-jenkins',
                     branch: 'master'
             )
+            sh "$workspace/create_changeLog_of_directory.sh"
         }
     }
 
@@ -28,6 +30,7 @@
                     credentialsId: 'archilab-github-jenkins',
                     branch: 'master'
             )
+            sh "$workspace/create_changeLog_of_directory.sh"
         }
     }
 
@@ -38,6 +41,7 @@
                     credentialsId: 'archilab-github-jenkins',
                     branch: 'master'
             )
+            sh "$workspace/create_changeLog_of_directory.sh"
         }
     }
 
@@ -48,6 +52,7 @@
                     credentialsId: 'archilab-github-jenkins',
                     branch: 'master'
             )
+            sh "$workspace/create_changeLog_of_directory.sh"
         }
     }
 
