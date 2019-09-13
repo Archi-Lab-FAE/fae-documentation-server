@@ -11,7 +11,7 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
 
-  <h3 class="post-list-heading">{{ page.list_title | default: "Zuletzt erstellte Entscheidungen" }}</h3>
+  <h3 class="post-list-heading">{{ page.list_title | default: "Recently created decision" }}</h3>
   <ul class="post-list">
     {% assign sorted_posts = site.posts | sort: "date" | reverse %}
     {%- for post in sorted_posts limit:5 -%}
