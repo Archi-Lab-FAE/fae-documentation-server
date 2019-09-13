@@ -13,12 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: FAE Dokumentation WS19
+title: FAE Documentation WS19
 email: Stefan.Bente@th-koeln.de
 description: >- # this means to ignore newlines until "baseurl:"
-  Die Dokumentation des Kurses Fachspezifischer Architektur Entwurf an der TH-Köln im Wintersemester 2019/20.
-  Die Dokementation umfasst alle Teams, sowie den Team umfassenden Teil der allgemeingeltenden Sprache (ubiquitous
-  language).
+  The documentation of the study course "Fachspezifischer Architektur Entwurf" at the TH-Köln in the winter semester
+  2019/2020. The documentation state all decision of the current project and its ubiquitous language.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ArchiLab_CIDE

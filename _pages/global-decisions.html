@@ -1,26 +1,26 @@
 ---
-title:     Globale Entscheidungen
+title:     Global Decisions
 permalink: /global-decisions
 layout:    page
 ---
 <p>
-  Hier werden alle globalen Entscheidungen zwischen den Teams aufgeführt.
-  Globale Entscheidungen betreffen das gesamte Projekt oder mehrere Teams.
-  Globale Enscheidungen müssen mit den betroffenen Teams oder im Plenum verfasst werden.
+  This page lists all global decisions between the participating teams.
+  Global decisions affect the whole project or at least multiple teams.
+  Furthermore global decisions must be evaluated by all members of the lecture or the concerned teams.
 </p>
 
-<h3>Liste der Entscheidungen</h3>
+<h3>Decision list</h3>
 <ul class="post-list">
   {%- if site.categories.global.size > 0 -%}
   {% for post in site.categories.global %}
   <li class="post-list-item"><span
-      class="post-meta">{{ post.date | date_to_string }}&nbsp;Autor:&nbsp;{{post.author}}</span> &nbsp;
+      class="post-meta">{{ post.date | date_to_string }}&nbsp;Author:&nbsp;{{post.author}}</span> &nbsp;
     <h4>
       <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
     </h4>
   </li>
   {% endfor %}
   {% else %}
-  <h4 class="post-list-item">Bisher keine Entscheidungen vorhanden</h4>
+  <h4 class="post-list-item">There are no decision at this moment.</h4>
   {% endif %}
 </ul>

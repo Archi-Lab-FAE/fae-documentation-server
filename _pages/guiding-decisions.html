@@ -1,27 +1,27 @@
 ---
-title:     Richtlinien
+title:     Guiding Decisions
 permalink: /guiding-decisions
 layout:    page
 ---
 <p>
-  Hier werden alle Richtlinien für das Projekt aufgeführt. Eine Richtlinie kann sowohl lokal als auch global gültig
-  sein. Richtlinien beschreiben ein gewisses Vorgehen um zu einer gewollten Lösung zu gelangen. Eine Richtlinie wird
-  meistens durch ein Team verfasst und sollte im Plenum vorgestellt werden.
+  This page states all guiding decisions of the project. A guiding decision can be valid for only a team, multiple
+  teams or the project. These decisions describe a process how to achieve a defined/specific solution.
+  Guiding decisions should be discussed with all teams!
 </p>
 
-<h3>Liste der Entscheidungen</h3>
+<h3>Guideline list</h3>
 <ul class="post-list">
   {%- if site.categories.guide.size > 0 -%}
   {% for post in site.categories.guide %}
   <li class="post-list-item"><span
-      class="post-meta">{{ post.date | date_to_string }}&nbsp;Autor:&nbsp;{{post.author}}</span> &nbsp;
+      class="post-meta">{{ post.date | date_to_string }}&nbsp;Author:&nbsp;{{post.author}}</span> &nbsp;
     <h4>
       <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
     </h4>
   </li>
   {% endfor %}
   {% else %}
-  <h4 class="post-list-item">Bisher keine Richtlinien vorhanden</h4>
+  <h4 class="post-list-item">There are no decision at this moment.</h4>
   {% endif %}
 </ul>
 

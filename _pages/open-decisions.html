@@ -1,26 +1,25 @@
 ---
-title:     Offene Entscheidungen
+title:     Open Decisions
 permalink: /open-decisions
 layout:    page
 ---
 <p>
-  Auf dieser Seit werden alle offenen Entscheidungen aufgefasst. Offen Entscheidungen sind Entscheidungen die noch
-  geklärt werden müssen. Die Entscheidung muss hierzu dem Plenum oder den betroffenen Teams vorgestellt werden,
-  sodass eine Entgültige Entscheidung getroffen werden kann.
+  This page displays open decisions. Open decisions need to be evaluated with all teams or within a team.
+  After discussing the decisions' topic the category of the decision must change to the evaluated one.
 </p>
 
-<h3>Liste der Entscheidungen</h3>
+<h3>Decision list</h3>
 <ul class="post-list">
   {%- if site.categories.open.size > 0 -%}
   {% for post in site.categories.open %}
   <li class="post-list-item"><span
-      class="post-meta">{{ post.date | date_to_string }}&nbsp;Autor:&nbsp;{{post.author}}</span> &nbsp;
+      class="post-meta">{{ post.date | date_to_string }}&nbsp;Author:&nbsp;{{post.author}}</span> &nbsp;
     <h4>
       <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
     </h4>
   </li>
   {% endfor %}
   {% else %}
-  <h4 class="post-list-item">Bisher keine Entscheidungen vorhanden</h4>
+  <h4 class="post-list-item">There are no decision at this moment.</h4>
   {% endif %}
 </ul>

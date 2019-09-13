@@ -4,11 +4,11 @@ permalink: /team-3
 layout:    page
 ---
 <p>
-  Hier werden alle {{page.title}} bezogenen Entscheidungen aufgeführt.
-  Diese Entscheidungen sollten innerhalb des Teams enschieden werden.
-  Es sollten alle relevanten Entscheidungen festgehalten werden.
+  This page states all local decisions of team {{page.title}}.
+  These local decisions must be valid only for the team.
+  Please create a decision for every relevant topic!
 </p>
-<h3>Mitglieder {{page.title}}</h3>
+<h3>Member {{page.title}}</h3>
 <ul>
   <li>Member1</li>
   <li>Member2</li>
@@ -16,19 +16,19 @@ layout:    page
 </ul>
 
 
-<h3>Liste der Entscheidungen</h3>
+<h3>Decision list</h3>
 <ul class="post-list">
   {%- if site.categories.team3.size > 0 -%}
   {% for post in site.categories.team3 %}
   <li class="post-list-item"><span
-      class="post-meta">{{ post.date | date_to_string }}&nbsp;Autor:&nbsp;{{post.author}}</span> &nbsp;
+      class="post-meta">{{ post.date | date_to_string }}&nbsp;Author:&nbsp;{{post.author}}</span> &nbsp;
     <h4>
       <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
     </h4>
   </li>
   {% endfor %}
   {% else %}
-  <h4 class="post-list-item">Bisher keine Entscheidungen vorhanden</h4>
+  <h4 class="post-list-item">There are no decision at this moment.</h4>
   {% endif %}
 </ul>
 

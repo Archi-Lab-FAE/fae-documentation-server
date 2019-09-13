@@ -7,9 +7,9 @@ do
   case "$entry" in
     *.md | *.mdown | *.mkdn | *.mkd | *.markdown)
 
-      printf "### ChangeLog  \n" >>$entry
+      printf "### Changelog  \n" >>$entry
       printf "  \n" >> $entry
-      printf "| Commit | Commit-Message | Datum | Nutzer |  \n|-------|-------|--------|--------|  \n">>$entry
+      printf "| Commit | Commit-Message | Date | Author |  \n|-------|-------|--------|--------|  \n">>$entry
       git log --pretty=format:"| %h | %s | %ad | %an |  " --date=short "$entry" >> $entry
       ;;
     *)
