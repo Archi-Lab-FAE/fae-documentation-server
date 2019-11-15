@@ -12,7 +12,8 @@ layout:    page
 <h3>Guideline list</h3>
 <ul class="post-list">
   {%- if site.categories.guide.size > 0 -%}
-  {% for post in site.categories.guide %}
+  {% assign sorted_posts = site.categories.guide | sort:"title" %}
+  {% for post in sorted_posts %}
   <li class="post-list-item"><span
       class="post-meta">{{ post.date | date_to_string }}&nbsp;Author:&nbsp;{{post.author}}</span> &nbsp;
     <h4>
